@@ -48,32 +48,131 @@ h1, h2, h3, h4, h5, h6 {
 
 /** Your CSS Below **/
 
+body {
+  font-family: var(--fs-base);
+  font-weight: var(--fw-regular);
+}
+
+main {
+  background-color: var(--clr-stone100); 
+  width: var(--width-desktop);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 article {
-  font: var(--fs-accent);
+  background-color: white;
+  padding: 15px;
+  border-radius: 25px;
+  max-width: 725px; 
+}
+
+img {
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+#title p {
+  margin-top: 10px;
+}
+
+section {
+  padding: 20px;
+}
+
+h1,h2 {
+  font-family: var(--fs-accent);
+  font-weight: var(--fw-regular);
+}
+
+ul, ol {
+  padding-left: 25px;
 }
 
 h1 {
   color: var(--clr-stone900);
   font-size: var(--font-header); 
+  font-weight: var(--fw-black);
 }
 
 h2 {
   color: var(--clr-brown800);
   font-size: var(--font-sub-header);
+  margin-bottom: 20px;
 }
 
 h3 {
   color: var(--clr-rose800);
+  padding-left: 5px;
+  padding-bottom: 10px
 }
 
-p, li {
+#preparation {
+  background-color: var(--clr-rose50);
+  margin: 20px;
+}
+
+#preparation ul {
+  padding-left: 30px;
+}
+
+p, li, td {
   color: var(--clr-stone600);
+  font: var(--fs-base);
   font-size: var(--font-paragraph);
+}
+
+table {
+  margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+td {
+  width: 50%;
+  padding: 10px 0 10px 0;
+  border-bottom: 1px solid var(--clr-stone150); 
+}
+
+td:first-child {
+  padding-left: 30px;
+}
+
+tr:last-child td {
+  padding-bottom: 0;
+  border-bottom: none; 
+}
+
+
+li::marker {
+  color: var(--clr-brown800);
+}
+
+ol li::marker {
+  font-weight: var(--fw-bold);
+}
+
+ul li {
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+
+ol li {
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+
+strong {
+  font-weight: var(--fw-bold);
 }
 
 #nutrition strong {
   color: var(--clr-brown800);
 }
+
 
 
 /** Attribution CSS **/
