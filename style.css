@@ -63,10 +63,12 @@ main {
 
 
 article {
+  box-sizing: border-box;
   background-color: white;
   padding: 15px;
   border-radius: 25px;
   max-width: 725px; 
+  margin: 100px 0px;
 }
 
 img {
@@ -79,7 +81,10 @@ img {
 }
 
 section {
-  padding: 20px;
+  box-sizing: border-box;
+  padding: 20px 0px;
+  margin: 0px 20px;
+
 }
 
 h1,h2 {
@@ -111,7 +116,7 @@ h3 {
 
 #preparation {
   background-color: var(--clr-rose50);
-  margin: 20px;
+  padding: 20px;
 }
 
 #preparation ul {
@@ -146,6 +151,9 @@ tr:last-child td {
   border-bottom: none; 
 }
 
+#ingredients, #instructions {
+    border-bottom: 1px solid var(--clr-stone150); 
+}
 
 li::marker {
   color: var(--clr-brown800);
